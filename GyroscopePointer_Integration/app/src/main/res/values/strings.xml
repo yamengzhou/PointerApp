@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GyroscopePointer_Integration</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="Title">Gyro-Pointer Test</string>
+    <string name="Push">Push</string>
+    <string name="action_settings">Settings</string>
+</resources>
