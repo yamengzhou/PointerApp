@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Transmit_Rotation_Mat_Through_Wifi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Gyroscope Pointer Test</string>
+    <string name="bSend">Pointing</string>
+    <string name="status">Off</string>
+</resources>

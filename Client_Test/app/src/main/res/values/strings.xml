@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Client_Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">This is a client test </string>
+    <string name="send">Send</string>
+    <string name="generate">Generate</string>
+</resources>

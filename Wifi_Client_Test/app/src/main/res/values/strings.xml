@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wifi_Client_Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello"> This is a Wifi Transmitting test</string>
+</resources>
