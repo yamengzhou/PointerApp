@@ -30,7 +30,8 @@ import java.nio.FloatBuffer;
 
 
 public class Gyro_Main extends Activity implements SensorEventListener {
-    private static int samplingRate = 50000;
+    private static int samplingRate = 100;
+    private static int samplingTime = 1/samplingRate*1000000; //1/rate*1000000
     private static float EPSILON = 0.5f;
 
     private SensorManager sensorManager;
@@ -132,14 +133,14 @@ public class Gyro_Main extends Activity implements SensorEventListener {
             deltaRotationVector[2] = sinThetaOverTwo * axisZ;
             deltaRotationVector[3] = cosThetaOverTwo;
         }
-        Log.d("Debug: ","delta rotation is:  " + Float.toString(deltaRotationVector[0])
-                + " " + Float.toString(deltaRotationVector[1])
-                + " " + Float.toString(deltaRotationVector[2]));
+        //Log.d("Debug: ","delta rotation is:  " + Float.toString(deltaRotationVector[0])
+         //       + " " + Float.toString(deltaRotationVector[1])
+        //        + " " + Float.toString(deltaRotationVector[2]));
         for(int i = 0; i < 3; ++i)
         angles[i] += deltaRotationVector[i];
-        Log.d("Debug: ","current angle is: " + Float.toString(angles[0])
-                + " " + Float.toString(angles[1])
-                + " " + Float.toString(angles[2]));
+        //Log.d("Debug: ","current angle is: " + Float.toString(angles[0])
+          //      + " " + Float.toString(angles[1])
+        //        + " " + Float.toString(angles[2]));
         timestamp = event.timestamp;
     }
 
@@ -149,12 +150,19 @@ public class Gyro_Main extends Activity implements SensorEventListener {
         sensorManager.registerListener(
                 this,
                 sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE),
-                samplingRate // sampling rate about 0.05 sec
+                samplingTime // sampling rate about 0.05 sec
         );
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int e){
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        this.finish();
 
     }
 }
