@@ -30,6 +30,8 @@ import java.nio.FloatBuffer;
 
 
 public class Gyro_Main extends Activity implements SensorEventListener {
+    private static String IP = "192.168.0.9";
+    private static int PORT = 1149;
     private static int samplingRate = 100;
     private static int samplingTime = 1/samplingRate*1000000; //1/rate*1000000
     private static float EPSILON = 0.5f;
@@ -70,7 +72,7 @@ public class Gyro_Main extends Activity implements SensorEventListener {
                 Socket socket;
 
                 try{
-                    socket = new Socket("192.168.0.9",1149);
+                    socket = new Socket(IP,PORT);
                     // Translate data from float to byte
                     ByteBuffer byteBuffer = ByteBuffer.allocate(4 * angles.length);
                     FloatBuffer floatBuffer = byteBuffer.asFloatBuffer();
