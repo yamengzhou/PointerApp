@@ -1,3 +1,10 @@
+/******************************************************************/
+// Author: Yameng Zhou
+// Date: April 15
+// Description: This is the source code for a cellphone pointer.
+// This is only the test version.
+//
+/******************************************************************/
 package com.example.alex.gyroscopepointer_integration;
 
 import android.app.Activity;
