@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FileSavingTest</string>
+    <string name="Title">Accelerometer Reading Test</string>
+    <string name="version">version 0.10</string>
+    <string name="filename">File name</string>
+    <string name="b_save">Save</string>
+    <string name="email">Email Address</string>
+    <string name="b_send">Send</string>
+    <string name="sensor">Sensor Status</string>
+    <string name="action_settings">Settings</string>
+</resources>
