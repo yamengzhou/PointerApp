@@ -14,6 +14,8 @@ import java.io.OutputStream;
 /**
  * Created by Alex on 4/30/2015.
  */
+
+/*
 public class RecordSaving extends Activity{
 
     private EditText e_filename;
@@ -61,7 +63,7 @@ public class RecordSaving extends Activity{
                 }
             }
 
-            /* Checks if external storage is available for read and write */
+            // Checks if external storage is available for read and write
             public boolean isExternalStorageWritable() {
                 String state = Environment.getExternalStorageState();
                 if (Environment.MEDIA_MOUNTED.equals(state)) {
@@ -70,7 +72,7 @@ public class RecordSaving extends Activity{
                 return false;
             }
 
-            /* Checks if external storage is available to at least read */
+            // Checks if external storage is available to at least read
             public boolean isExternalStorageReadable() {
                 String state = Environment.getExternalStorageState();
                 if (Environment.MEDIA_MOUNTED.equals(state) ||
@@ -82,3 +84,4 @@ public class RecordSaving extends Activity{
         });
     }
 }
+*/
