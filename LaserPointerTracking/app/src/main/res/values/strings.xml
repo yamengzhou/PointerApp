@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LaserPointerTracking</string>
+
+    <string name="Title">Gallery Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_gallery">Open Gallery</string>
+</resources>
